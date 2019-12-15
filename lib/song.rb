@@ -1,6 +1,7 @@
 require 'pry'
 
 class Song
+  
   extend Memorable::ClassMethods
   extend Findable
   include Memorable::InstanceMethods
@@ -37,7 +38,4 @@ class Song
   def to_param
     name.downcase.gsub(' ', '-')
   end
-  #def to_param
-    #name.downcase.gsub(' ', '-')
- # end
 end
