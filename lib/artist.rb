@@ -1,6 +1,7 @@
 require 'pry'
 
 class Artist
+  
   extend Memorable::ClassMethods
   extend Findable
   include Memorable::InstanceMethods
@@ -43,7 +44,4 @@ class Artist
   def to_param
     name.downcase.gsub(' ', '-')
   end
-  #def to_param
-   # name.downcase.gsub(' ', '-')
-  #end
 end
